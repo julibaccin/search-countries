@@ -1,0 +1,8 @@
+<div class="card m-2" style="width: 200px;">
+    <img [src]="pais.flag" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{pais.name}}</h5>
+      <p class="card-text">{{pais.capital}}</p>
+      <a href="#" class="btn btn-primary" [routerLink]='"especifico/"+pais.name'>Saber más</a>
+    </div>
+</div>

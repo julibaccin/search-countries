@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="card mt-2" *ngIf="pais" style="width: 18rem;">
+    <img [src]="pais.flag" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{pais.name}}</h5>
+      <p class="card-text">Capital: {{pais.capital}}</p>
+      <p class="card-text">Poblacion: {{pais.population}}</p>
+      <p class="card-text">Region: {{pais.region}}</p>
+    </div>
+</div>
+<button type="button" routerLink='/' class="btn btn-info">Volver</button>
+</div>
+    
+
+

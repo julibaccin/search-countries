@@ -1,0 +1,17 @@
+<div class="container">
+    <h1>Buscar Pais</h1>
+    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" #inpu (keyup)='buscar()'>
+    <br>
+    
+    
+    <hr>
+    
+    <div class='card-group'>
+
+        <div *ngFor="let pais of paises | filtrar:filtro">
+            <app-card [pais]='pais'></app-card>
+        </div>
+ 
+    </div>
+</div>
+
